@@ -1,5 +1,5 @@
 <?php
-namespace Deepdivedylan\DataDesign;
+namespace pleyba4\ObjectOriented;
 require_once(dirname(__DIR__) . "/vendor/autoload.php");
 use Ramsey\Uuid\Uuid;
 /**

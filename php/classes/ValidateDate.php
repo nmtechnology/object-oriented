@@ -1,5 +1,5 @@
 <?php
-namespace Deepdivedylan\DataDesign;
+namespace pleyba4\ObjectOriented;
 /**
  * Trait to Validate a mySQL Date
  *
