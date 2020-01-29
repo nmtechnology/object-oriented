@@ -15,8 +15,8 @@ use Ramsey\Uuid\Uuid;
  */
 
 class Author implements \JsonSerializable {
-	use ValidateDate;
 	use ValidateUuid;
+
 	/**
 	 * constructor for Author
 	 * @param string|Uuid $newAuthorId id of this Author or null if a new Author
@@ -203,7 +203,9 @@ class Author implements \JsonSerializable {
 		}
 		//store the email
 		$this->authorEmail = $newAuthorEmail;
-	} //end of setAuthorEmail function
+	}
+
+	//end of setAuthorEmail function
 	/**
 	 * accessor method for authorHash
 	 *
@@ -233,7 +235,7 @@ class Author implements \JsonSerializable {
 		}
 		//enforce that the hash is exactly 97 characters
 		if(strlen($newAuthorHash) > 97) {
-			throw(new \RangeException("author hash must be 97 characters to be valid"));
+			throw(new \RangeException("author hash must be 96 characters to be valid"));
 		}
 		//store this hash
 		$this->authorHash = $newAuthorHash;
@@ -281,3 +283,4 @@ class Author implements \JsonSerializable {
 		return($fields);
 	}
 }
+
