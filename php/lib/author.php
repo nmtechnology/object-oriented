@@ -1,7 +1,5 @@
 <?php
 
-namespace pleyba4\ObjectOriented;
-
 require_once (dirname(__DIR__) . "/Classes/autoload.php");
 
 use pleyba4\ObjectOriented\Author;
