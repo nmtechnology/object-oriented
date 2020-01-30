@@ -205,6 +205,7 @@ class Author implements \JsonSerializable {
 		$this->authorEmail = $newAuthorEmail;
 	}
 
+
 	//end of setAuthorEmail function
 	/**
 	 * accessor method for authorHash
@@ -282,5 +283,7 @@ class Author implements \JsonSerializable {
 		$fields["authorId"] = $this->authorId->toString();
 		return($fields);
 	}
+
+
 }
 
