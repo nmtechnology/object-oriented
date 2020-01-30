@@ -10,4 +10,4 @@ $newAuthor = new Author("8fd6a6e3-8d3e-463c-a4b8-2b2e573ef5ac", "123456789012345
 
 echo ($newAuthor-> getAuthorId()),($newAuthor-> getAuthorActivationToken()),($newAuthor-> getAuthorAvatarUrl()),($newAuthor-> getAuthorEmail()),($newAuthor-> getAuthorHash()),($newAuthor-> getAuthorUsername());
 
-var_dump($newAuthor);
+var_dump($newAuthor);k
