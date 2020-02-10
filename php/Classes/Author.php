@@ -74,10 +74,10 @@ class Author implements \JsonSerializable {
 	}
 
 	/**
-	 * mutator method for tweet id
+	 * mutator method for author id
 	 *
-	 * @param Uuid|string $newAuthorId new value of Auhor id
-	 * @throws \RangeException if $newAuthord is not positive
+	 * @param Uuid|string $newAuthorId new value of Author id
+	 * @throws \RangeException if $newAuthorId is not positive
 	 * @throws \TypeError if $newAuthorId is not a uuid or string
 	 **/
 
@@ -89,11 +89,11 @@ class Author implements \JsonSerializable {
 			throw(new $exceptionType($exception->getMessage(), 0, $exception));
 		}
 
-		// convert and store the tweet id
+		// convert and store the authorid
 		$this->authorId = $uuid;
 
 
-		//$this -> authorId = $newAuthorId; Orignial Code
+		//$this -> authorId = $newAuthorId
 	}
 
 	/**
